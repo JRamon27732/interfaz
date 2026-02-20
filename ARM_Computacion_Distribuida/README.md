@@ -19,20 +19,20 @@
 ---
 
 ## Introducción
-
+<p align="justify">
 La evolución de la computación ha llevado a la necesidad de sistemas capaces de procesar grandes cantidades de información de forma simultánea. La computación distribuida surge como respuesta a esta necesidad, permitiendo que múltiples dispositivos trabajen en conjunto para resolver un mismo problema.
 
 Dentro de este contexto, la arquitectura ARM ha cobrado gran relevancia debido a su eficiencia energética, bajo consumo de recursos y adaptabilidad a distintos entornos tecnológicos. Actualmente, ARM no solo está presente en teléfonos móviles, sino también en servidores, centros de datos, sistemas embebidos y dispositivos del Internet de las Cosas (IoT).
 
 El objetivo de esta investigación es analizar la relación entre la arquitectura ARM y la computación distribuida, explicando por qué esta arquitectura se ha convertido en una de las principales opciones para infraestructuras modernas.
-
+</p>
 ---
 
 ## Arquitectura ARM
 
 ![Arquitectura ARM](../ARM.jpg)
 
-
+<p align="justify">
 ARM (Advanced RISC Machine) es una arquitectura de procesadores basada en el modelo RISC (Reduced Instruction Set Computer). Este modelo se caracteriza por utilizar un conjunto reducido de instrucciones simples que pueden ejecutarse rápidamente, a diferencia de las arquitecturas CISC que utilizan instrucciones más complejas.
 
 Entre sus características principales se encuentran:
@@ -44,6 +44,8 @@ Entre sus características principales se encuentran:
 * Capacidad de integración en dispositivos pequeños
 
 Estas propiedades hacen que los procesadores ARM sean ideales para dispositivos portátiles y sistemas que requieren funcionamiento continuo.
+</p>
+
 
 ---
 
@@ -65,7 +67,7 @@ La eficiencia energética de ARM permite utilizar más nodos con menor consumo e
 ---
 
 ## Computación Distribuida
-
+<p align="justify">
 La computación distribuida consiste en un sistema donde múltiples computadoras independientes trabajan juntas como si fueran una sola. Cada nodo del sistema realiza una parte del procesamiento y comparte resultados con los demás nodos mediante una red de comunicación.
 
 Ejemplos de computación distribuida incluyen:
@@ -82,11 +84,11 @@ Las principales ventajas son:
 * Alta disponibilidad
 * Tolerancia a fallos
 * Mejor rendimiento
-
+</p>
 ---
 
 ## Relación entre ARM y la Computación Distribuida
-
+<p align="justify">
 La arquitectura ARM se ha vuelto especialmente importante en la computación distribuida debido a su eficiencia energética. En un sistema distribuido existen decenas, cientos o incluso miles de nodos, por lo que el consumo eléctrico total se convierte en un factor crítico.
 
 Un servidor tradicional basado en arquitecturas x86 consume considerablemente más energía que múltiples nodos ARM trabajando en paralelo. Debido a esto, empresas tecnológicas han comenzado a implementar servidores ARM en centros de datos.
@@ -99,11 +101,11 @@ Ejemplos actuales incluyen:
 * Servidores ARM en la nube
 * Dispositivos inteligentes conectados
 * Sistemas de edge computing
-
+</p>
 ---
 
 ## Aplicación en Lenguaje de Interfaz
-
+<p align="justify">
 El lenguaje de interfaz se relaciona con la forma en que el software interactúa con el hardware. En sistemas distribuidos con procesadores ARM, el software debe optimizar la comunicación entre nodos, el manejo de memoria y el uso eficiente de recursos.
 
 Las interfaces de bajo nivel permiten:
@@ -114,15 +116,36 @@ Las interfaces de bajo nivel permiten:
 * Interacción con sistemas operativos ligeros (Linux embebido)
 
 Esto es especialmente importante en dispositivos IoT donde el hardware tiene recursos limitados.
+</p>
 
 ---
 
 ## Conclusión
-
+<p align="justify">
 La arquitectura ARM ha pasado de ser exclusiva de dispositivos móviles a convertirse en una pieza clave dentro de la computación distribuida. Su eficiencia energética, bajo costo y escalabilidad la hacen ideal para sistemas modernos que requieren operación continua y gran capacidad de procesamiento.
 
 La computación distribuida continuará creciendo junto con tecnologías como la nube, el edge computing y el Internet de las Cosas, donde ARM desempeñará un papel fundamental al permitir infraestructuras más eficientes y sostenibles.
+</p>
 
+```mermaid
+graph TD
+    A[Aplicación en Lenguaje de Interfaz]
+
+    A --> B[Interacción Software - Hardware]
+    B --> C[Optimización en sistemas ARM]
+    C --> C1[Comunicación entre nodos]
+    C --> C2[Manejo de memoria]
+    C --> C3[Uso eficiente de recursos]
+
+    A --> D[Interfaces de bajo nivel]
+    D --> D1[Comunicación entre dispositivos]
+    D --> D2[Control de periféricos]
+    D --> D3[Gestión de sensores]
+    D --> D4[Linux embebido]
+
+    A --> E[Importancia en IoT]
+    E --> E1[Recursos limitados]
+```
 ---
 
 ## Referencias
